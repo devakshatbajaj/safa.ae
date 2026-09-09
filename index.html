@@ -83,6 +83,8 @@
     .header-cta{margin:0;border: 1px solid #ed1c24 !important;justify-self:end;min-width:140px;min-height:36px;padding:16px 20px;font:500 14px/1 Poppins,Arial,sans-serif;letter-spacing:.04em;gap:0}
     .header-cta::after{display:none}
     .menu-toggle{display:none;background:none;border:0;color:#fff;width:46px;height:46px;align-items:center;justify-content:center;font-size:19px}
+    .menu-toggle i{transition:transform .3s ease}
+    .menu-toggle[aria-expanded="true"] i{transform:rotate(90deg)}
 
     /* Hero */
     .hero{min-height:690px;position:relative;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid #252525}
@@ -169,8 +171,8 @@
       .container{width:min(calc(100% - 32px),var(--max))}
       .nav{height:70px}
       .nav{height:70px;display:flex;gap:0}
-      .nav-links{display:none;position:absolute;left:16px;right:16px;top:70px;padding:14px 18px;background:#080808;border:1px solid #2a2a2a;flex-direction:column;align-items:stretch;gap:0}
-      .nav-links.open{display:flex}
+      .nav-links{position:absolute;left:16px;right:16px;top:70px;padding:14px 18px;background:#080808;border:1px solid #2a2a2a;flex-direction:column;align-items:stretch;gap:0;max-height:0;opacity:0;overflow:hidden;padding-top:0;padding-bottom:0;pointer-events:none;transform:translateY(-8px);transition:max-height .35s ease,opacity .25s ease,transform .3s ease,padding .35s ease}
+      .nav-links.open{display:flex;max-height:420px;opacity:1;padding-top:14px;padding-bottom:14px;pointer-events:auto;transform:translateY(0)}
       .nav-links a{padding:14px 0;border-bottom:1px solid #1f1f1f}
       .nav-links a:last-child{border-bottom:0}
       .nav-links a::after{bottom:7px}
@@ -394,11 +396,15 @@
     .why-block strong{display:block;font:500 16px/1.25 Poppins,Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em}
     .why-block small{display:block;color:#999;font-size:12.5px;margin-top:6px;line-height:1.5}
     @media (max-width:1100px){.why-grid-v2{grid-template-columns:repeat(3,1fr)}}
-    @media (max-width:820px){.why-grid-v2{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:820px){.why-grid-v2{grid-template-columns:repeat(3,1fr)}}
     @media (max-width:520px){
       .why-v2{padding:34px 0}
-      .why-grid-v2{grid-template-columns:1fr;gap:10px}
-      .why-block{padding:20px 18px}
+      .why-grid-v2{grid-template-columns:repeat(3,1fr);gap:8px}
+      .why-block{padding:14px 10px;gap:8px}
+      .why-block .why-icon{width:30px;height:30px;flex:0 0 30px}
+      .why-block .why-icon i{font-size:18px}
+      .why-block strong{font-size:11px}
+      .why-block small{font-size:9.5px}
     }
 
     /* THE 3M STANDARD section */
@@ -408,7 +414,14 @@
     .standard-emoji{font-size:34px;margin-bottom:16px;line-height:1}
     .standard-block h3{margin:0 0 10px;font:500 17px/1.2 Oswald,Arial,sans-serif;letter-spacing:.03em;text-transform:uppercase}
     .standard-block p{margin:0;color:#9c9c9c;font-size:13px;line-height:1.7}
-    @media (max-width:820px){.standard-grid{grid-template-columns:1fr}}
+    @media (max-width:820px){.standard-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){
+      .standard-grid{gap:10px}
+      .standard-block{padding:20px 16px}
+      .standard-emoji{font-size:28px;margin-bottom:12px}
+      .standard-block h3{font-size:14px}
+      .standard-block p{font-size:12px}
+    }
 
     /* Google review testimonial slider */
     .one-line-copy{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
@@ -462,19 +475,9 @@
       .hero-actions{gap:12px}
       .hero-actions .btn{width:100%}
 
-      .why-grid-v2{gap:12px}
-      .why-block{padding:18px 16px;gap:12px}
-      .why-block .why-icon{width:38px;flex:0 0 38px}
-      .why-block .why-icon i{font-size:22px}
-      .why-block strong{font-size:14px}
-      .why-block small{font-size:12px}
-
       .google-summary{padding:16px 18px;margin-bottom:22px;gap:16px}
       .testimonial-card{padding:18px 16px}
       .testimonial-slider-wrap{padding:0 2px}
-
-      .standard-grid{gap:12px}
-      .standard-block{padding:22px 20px}
 
       .cta-box{gap:16px}
 
@@ -524,39 +527,63 @@
         bottom: 16px !important;
     }
   }
+
     /* ================================================================
-       WHY CHOOSE SAFA + 3M PRODUCTS — MOBILE SLIDERS
+       MOBILE ANIMATIONS
+       Scroll-reveal for cards, hero entrance, tap feedback and a
+       sticky-bar slide-in — all scoped to phone/tablet widths so
+       desktop is untouched. Respects prefers-reduced-motion.
     ================================================================ */
     @media (max-width:820px){
-      .why-grid-v2{
-        display:grid;
-        grid-template-columns:none;
-        grid-auto-flow:column;
-        grid-auto-columns:78%;
-        gap:12px;
-        overflow-x:auto;
-        scroll-snap-type:x mandatory;
-        -webkit-overflow-scrolling:touch;
-        scrollbar-width:none;
-        padding-bottom:4px;
+      /* Hero: staged fade-up on load */
+      .hero-kicker,.hero-visual-heading,.hero-rule,.hero-copy,.hero-actions,.trust-row-big{
+        opacity:0;transform:translateY(16px);
+        animation:heroIn .6s ease forwards;
       }
-      .why-grid-v2::-webkit-scrollbar{display:none}
-      .why-block{scroll-snap-align:start}
+      .hero-kicker{animation-delay:.05s}
+      .hero-visual-heading{animation-delay:.15s}
+      .hero-rule{animation-delay:.25s}
+      .hero-copy{animation-delay:.3s}
+      .hero-actions{animation-delay:.4s}
+      .trust-row-big{animation-delay:.5s}
+      @keyframes heroIn{to{opacity:1;transform:translateY(0)}}
 
-      .standard-grid{
-        display:grid;
-        grid-template-columns:none;
-        grid-auto-flow:column;
-        grid-auto-columns:78%;
-        gap:12px;
-        overflow-x:auto;
-        scroll-snap-type:x mandatory;
-        -webkit-overflow-scrolling:touch;
-        scrollbar-width:none;
-        padding-bottom:4px;
+      /* Scroll-reveal: fade + rise as sections enter the viewport (see JS) */
+      .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+      .reveal.in-view{opacity:1;transform:translateY(0)}
+      .why-grid-v2 .why-block:nth-child(2).reveal{transition-delay:.06s}
+      .why-grid-v2 .why-block:nth-child(3).reveal{transition-delay:.12s}
+      .why-grid-v2 .why-block:nth-child(4).reveal{transition-delay:.18s}
+      .why-grid-v2 .why-block:nth-child(5).reveal{transition-delay:.24s}
+      .why-grid-v2 .why-block:nth-child(6).reveal{transition-delay:.3s}
+      .why-grid-v2 .why-block:nth-child(7).reveal{transition-delay:.36s}
+      .why-grid-v2 .why-block:nth-child(8).reveal{transition-delay:.42s}
+      .standard-grid .standard-block:nth-child(2).reveal{transition-delay:.08s}
+      .standard-grid .standard-block:nth-child(3).reveal{transition-delay:.16s}
+      .reels-grid .reel-card:nth-child(2).reveal{transition-delay:.05s}
+      .reels-grid .reel-card:nth-child(3).reveal{transition-delay:.1s}
+      .reels-grid .reel-card:nth-child(4).reveal{transition-delay:.15s}
+      .reels-grid .reel-card:nth-child(5).reveal{transition-delay:.2s}
+      .reels-grid .reel-card:nth-child(6).reveal{transition-delay:.25s}
+
+      /* Tap feedback for touch — hover states don't fire on mobile,
+         so give buttons and cards a quick press-down instead */
+      .btn,.why-block,.standard-block,.reel-card,.testimonial-card,.social,.wa-float{
+        transition:transform .15s ease,filter .15s ease,border-color .25s ease;
       }
-      .standard-grid::-webkit-scrollbar{display:none}
-      .standard-block{scroll-snap-align:start}
+      .btn:active,.why-block:active,.standard-block:active{transform:scale(.96)}
+      .reel-card:active{transform:scale(.97)}
+
+      /* Sticky bottom CTA bar: slide up on load instead of appearing instantly */
+      .sticky-cta-bar{animation:stickyIn .5s ease .2s both}
+      @keyframes stickyIn{from{transform:translateY(100%)}to{transform:translateY(0)}}
+    }
+    @media (max-width:820px) and (prefers-reduced-motion:reduce){
+      .hero-kicker,.hero-visual-heading,.hero-rule,.hero-copy,.hero-actions,.trust-row-big{
+        animation:none;opacity:1;transform:none;
+      }
+      .reveal{opacity:1;transform:none;transition:none}
+      .sticky-cta-bar{animation:none}
     }
   </style>
 
@@ -770,9 +797,9 @@
       <div class="google-summary-badge">
         <i class="fa-brands fa-google" aria-hidden="true"></i>
         <div>
-          <div class="google-summary-score">4.9<span style="font-size:16px;color:#9a9a9a">/5</span></div>
+          <div class="google-summary-score">4.6<span style="font-size:16px;color:#9a9a9a">/5</span></div>
           <div class="google-summary-stars" aria-hidden="true">★★★★★</div>
-          <div class="google-summary-meta">Based on 300+ Google reviews</div>
+          <div class="google-summary-meta">Based on 200+ Google reviews</div>
         </div>
       </div>
       <a class="btn google-summary-cta" href="https://www.google.com/search?q=SAFA+Automotive+Dubai+reviews" target="_blank" rel="noopener">READ ALL REVIEWS</a>
@@ -863,13 +890,7 @@
     </div>
 
     <div class="reels-grid">
-      <button type="button" class="reel-card" data-video="assets/reel-1.mp4" data-caption="Ceramic Coating Reveal" data-vehicle="BMW 5 Series" data-ig="https://www.instagram.com/reel/CkiYIgyjQBe/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" aria-label="View reel on Instagram: Ceramic Coating Reveal">
-        <video src="https://cdn.shopify.com/videos/c/o/v/d4c4341ae2f546a98e5eadf234240fe1.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
-        <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
-        <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
-        <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-        <div class="reel-caption"><strong>3M Tinting for Tesla Model Y</strong><span>Customer Review</span></div>
-      </button>
+      
       <button type="button" class="reel-card" data-video="assets/reel-2.mp4" data-caption="Tint Before &amp; After" data-vehicle="Range Rover Sport" data-ig="https://www.instagram.com/p/CLmNtUeDct-/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" aria-label="View reel on Instagram: Tint Before and After">
         <video src="https://cdn.shopify.com/videos/c/o/v/763ad4729ff445368d87e95f6b337629.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
         <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
@@ -884,13 +905,7 @@
         <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
         <div class="reel-caption"><strong> 3M Color Stable Tint Plus Glass Protection</strong><span>Customer Review</span></div>
       </button>
-      <button type="button" class="reel-card" data-video="assets/reel-4.mp4" data-caption="Client Walkthrough" data-vehicle="At our Al Quoz workshop" data-ig="https://www.instagram.com/p/CkLGeWkjmJ9/?utm_source=ig_web_copy_link" aria-label="View reel on Instagram: Client Walkthrough">
-        <video src="https://cdn.shopify.com/videos/c/o/v/ac38f03ebd7a4e50b66aa9f972c55bda.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
-        <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
-        <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
-        <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
-        <div class="reel-caption"><strong>3M Tinting for Sunny</strong><span>Customer Review</span></div>
-      </button>
+      
       <button type="button" class="reel-card" data-video="assets/reel-5.mp4" data-caption="Vinyl Wrap Finish" data-vehicle="Mercedes-AMG G63" data-ig="https://www.instagram.com/p/CVk0XJZj7fr/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" aria-label="View reel on Instagram: Vinyl Wrap Finish">
         <video src="https://cdn.shopify.com/videos/c/o/v/ccf877eedbac47a78e017c73a18bbee7.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
         <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
@@ -904,6 +919,20 @@
         <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
         <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
         <div class="reel-caption"><strong>3M Crystalline Tint</strong><span>Customer Review</span></div>
+      </button>
+      <button type="button" class="reel-card" data-video="assets/reel-4.mp4" data-caption="Client Walkthrough" data-vehicle="At our Al Quoz workshop" data-ig="https://www.instagram.com/reel/DbIrXemk-4P/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA%3D%3D" aria-label="View reel on Instagram: Client Walkthrough">
+        <video src="https://cdn.shopify.com/videos/c/o/v/94bc3a17db0b4edeaabd06d16f98db12.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
+        <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
+        <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
+        <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+        <div class="reel-caption"><strong>3M Car Tinting</strong><span>Real Work</span></div>
+      </button>
+      <button type="button" class="reel-card" data-video="assets/reel-1.mp4" data-caption="Ceramic Coating Reveal" data-vehicle="BMW 5 Series" data-ig="https://www.instagram.com/reel/C_Py8uSt_ig/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA%3D%3D" aria-label="View reel on Instagram: Ceramic Coating Reveal">
+        <video src="https://cdn.shopify.com/videos/c/o/v/6afdac01625148b19aa216bbfcb3bb5d.mp4" poster="" muted="" loop="" playsinline="" preload="none"></video>
+        <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
+        <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
+        <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+        <div class="reel-caption"><strong>3M Tinting </strong><span>Real Work</span></div>
       </button>
     </div>
     <div style="text-align:center">
@@ -1050,64 +1079,6 @@
 
     sections.forEach((section) => observer.observe(section));
   })();
-</script>
-
-<script>
-  // Auto-advancing sliders — Why Choose SAFA & 3M Products. These grids
-  // only become horizontally scrollable on phone/tablet widths (see the
-  // mobile-slider CSS), so on desktop `next()` is a harmless no-op since
-  // there's nothing to scroll.
-  function initAutoSlider(container, cardSelector, intervalMs) {
-    if (!container) return;
-    let timer = null;
-    let resumeTimeout = null;
-
-    function isScrollable() {
-      return container.scrollWidth > container.clientWidth + 4;
-    }
-
-    function stepSize() {
-      const card = container.querySelector(cardSelector);
-      if (!card) return container.clientWidth;
-      const gap = parseFloat(getComputedStyle(container).columnGap || getComputedStyle(container).gap || '0') || 0;
-      return card.getBoundingClientRect().width + gap;
-    }
-
-    function next() {
-      if (!isScrollable()) return;
-      const maxScroll = container.scrollWidth - container.clientWidth;
-      if (container.scrollLeft >= maxScroll - 4) {
-        container.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-        container.scrollBy({ left: stepSize(), behavior: 'smooth' });
-      }
-    }
-
-    function start() {
-      stop();
-      timer = setInterval(next, intervalMs);
-    }
-    function stop() {
-      if (timer) clearInterval(timer);
-      timer = null;
-    }
-    function pauseThenResume() {
-      stop();
-      clearTimeout(resumeTimeout);
-      resumeTimeout = setTimeout(start, intervalMs);
-    }
-
-    // Pause while the visitor is actively swiping/dragging, resume shortly after.
-    container.addEventListener('pointerdown', stop, { passive: true });
-    container.addEventListener('touchstart', stop, { passive: true });
-    container.addEventListener('pointerup', pauseThenResume, { passive: true });
-    container.addEventListener('touchend', pauseThenResume, { passive: true });
-
-    start();
-  }
-
-  initAutoSlider(document.querySelector('.why-grid-v2'), '.why-block', 5000);
-  initAutoSlider(document.querySelector('.standard-grid'), '.standard-block', 5000);
 </script>
 
 <script>
@@ -1324,6 +1295,34 @@
       }, 2000);
     });
   })();
+</script>
+
+<script>
+  // Mobile scroll-reveal — tag the repeating cards so the CSS
+  // fade/rise transition (scoped to <=820px) has something to animate,
+  // then reveal each one the first time it scrolls into view.
+  const revealTargets = document.querySelectorAll(
+    '.why-block, .standard-block, .reel-card, .testimonial-card'
+  );
+  revealTargets.forEach((el) => el.classList.add('reveal'));
+
+  if ('IntersectionObserver' in window && revealTargets.length) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealTargets.forEach((el) => revealObserver.observe(el));
+  } else {
+    // No IntersectionObserver support — just show everything.
+    revealTargets.forEach((el) => el.classList.add('in-view'));
+  }
 </script>
 </body>
 </html>
