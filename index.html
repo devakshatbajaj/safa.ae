@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Car Window Tinting Dubai | 3M Tinting Centre | SAFA Automotive</title>
-  <meta name="description" content="SAFA Automotive is Dubai's 3M Authorized Tint Center since 2003. Premium car window tinting for comfort &amp; protection. WhatsApp SAFA now for a free enquiry.">
-  <link rel="canonical" href="https://www.safa.ae/">
+  <title>3M Paint Protection Film (PPF) Dubai | SAFA Automotive</title>
+  <meta name="description" content="SAFA Automotive is Dubai's 3M Authorized installer for Paint Protection Film. Self-healing, chip &amp; scratch resistant 3M PPF, 10-year warranty. WhatsApp SAFA now for a free enquiry.">
+  <link rel="canonical" href="https://www.safa.ae/ppf/">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="Car Window Tinting Dubai | 3M Tinting Centre | SAFA Automotive">
-  <meta property="og:description" content="SAFA Automotive is Dubai's 3M Authorized Tint Center since 2003. Premium car window tinting for comfort &amp; protection. WhatsApp SAFA now for a free enquiry.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="3M Paint Protection Film (PPF) Dubai | SAFA Automotive">
+  <meta property="og:description" content="SAFA Automotive is Dubai's 3M Authorized installer for Paint Protection Film. Self-healing, chip &amp; scratch resistant 3M PPF, 10-year warranty. WhatsApp SAFA now for a free enquiry.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.safa.ae/">
+  <meta property="og:url" content="https://www.safa.ae/ppf/">
   <meta property="og:image" content="https://www.safa.ae/assets/safa-automotive-og.jpg">
   <meta property="og:locale" content="en_AE">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Car Window Tinting Dubai | 3M Tinting Centre | SAFA Automotive">
-  <meta name="twitter:description" content="SAFA Automotive is Dubai's 3M Authorized Tint Center since 2003. Premium car window tinting for comfort &amp; protection.">
+  <meta name="twitter:title" content="3M Paint Protection Film (PPF) Dubai | SAFA Automotive">
+  <meta name="twitter:description" content="SAFA Automotive is Dubai's 3M Authorized installer for Paint Protection Film. Self-healing, chip &amp; scratch resistant 3M PPF, 10-year warranty.">
   <meta name="twitter:image" content="https://www.safa.ae/assets/safa-automotive-og.jpg">
 
   <!-- Oswald closely matches the condensed automotive display face in the supplied reference.
@@ -25,18 +25,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/SAFA-NEW-LOGO.png">
 
   <style>
     :root{
-      --bg:#ffffff;
-      --panel:#f7f7f7;
-      --panel2:#f0f0f0;
-      --text:#141414;
-      --muted:#6b6b6b;
-      --line:#e2e2e2;
+      --bg:#050505;
+      --panel:#0b0b0b;
+      --panel2:#101010;
+      --text:#f5f5f5;
+      --muted:#9a9a9a;
+      --line:#292929;
       --red:#ed1c24;
       --max:1400px;
+      --bar-h:38px;
     }
+    body{padding-top:var(--bar-h)}
+    @media (max-width:480px){:root{--bar-h:34px}}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -60,45 +64,60 @@
       font:500 11px/1 Poppins,Arial,sans-serif;letter-spacing: 1PXS;text-transform:uppercase;
       transition:.25s ease;white-space:nowrap
     }
-    .btn::after{content:"→";font:500 18px/1 Arial,sans-serif}
+
     .btn-primary{background:var(--red);border-color:var(--red)}
     .btn:hover{border-color:var(--red);transform:translateY(-1px)}
     .btn-primary:hover{filter:brightness(1.08)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
+    /* Announcement bar */
+    .announcement-bar{
+      position:fixed;z-index:51;top:0;left:0;right:0;height:26px;
+      background:var(--red);color:#fff;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .announcement-bar a{
+      display:flex;align-items:center;gap:8px;color:#fff;
+      font:600 12px/1 Poppins,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;
+      padding:0 12px;text-align:center;white-space:nowrap
+    }
+    .announcement-bar i{font-size:11px}
+    .announcement-bar strong{font-weight:700;letter-spacing:.04em}
+    @media (max-width:480px){
+      .announcement-bar a{font-size:10px;letter-spacing:.05em;gap:6px}
+    }
+
     /* Header */
     .site-header{
-      position:fixed;z-index:50;top:0;left:0;right:0;
-      background:rgba(255,255,255,.85);backdrop-filter:blur(8px);
+      position:fixed;z-index:50;top:var(--bar-h);left:0;right:0;
+      background:rgba(4,4,4,.76);backdrop-filter:blur(8px);
       border-bottom:1px solid transparent;transition:.25s ease
     }
-    .site-header.scrolled{background:rgba(255,255,255,.97);border-color:#e2e2e2;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+    .site-header.scrolled{background:rgba(4,4,4,.94);border-color:#1e1e1e}
     .nav{height:82px;display:grid;grid-template-columns:120px minmax(0,1fr) 180px;align-items:center;gap:24px}
     .brand{display:flex;align-items:center;flex:0 0 auto}
     .brand img{width:78px;height:auto;object-fit:contain}
     .nav-links{display:flex;align-items:center;justify-content:center;gap:42px;margin:0}
-    .nav-links a{position:relative;font:500 14px/1 Poppins,Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:#1a1a1a;padding:33px 0}
+    .nav-links a{position:relative;font:500 14px/1 Poppins,Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;color:#eee;padding:33px 0}
     .nav-links a::after{content:"";position:absolute;left:0;bottom:22px;width:0;height:2px;background:var(--red);transition:.2s}
     .nav-links a:hover::after,.nav-links a.active::after{width:100%}
     .header-cta{margin:0;border: 1px solid #ed1c24 !important;justify-self:end;min-width:140px;min-height:36px;padding:16px 20px;font:500 14px/1 Poppins,Arial,sans-serif;letter-spacing:.04em;gap:0}
     .header-cta::after{display:none}
-    .menu-toggle{display:none;background:none;border:0;color:#1a1a1a;width:46px;height:46px;align-items:center;justify-content:center;font-size:19px}
+    .menu-toggle{display:none;background:none;border:0;color:#fff;width:46px;height:46px;align-items:center;justify-content:center;font-size:19px}
     .menu-toggle i{transition:transform .3s ease}
     .menu-toggle[aria-expanded="true"] i{transform:rotate(90deg)}
 
     /* Hero */
-    .hero{min-height:690px;position:relative;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid #e2e2e2}
+    .hero{min-height:690px;position:relative;display:flex;align-items:center;overflow:hidden;border-bottom:1px solid #252525}
     .hero-media{position:absolute;inset:0;z-index:0}
     .hero-media img{width:100%;height:100%;object-fit:cover;object-position:66% center;}
-    .hero-media::after{content:"";position:absolute;inset:0;z-index:1;background:
-      linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.82) 30%,rgba(0,0,0,.5) 52%,rgba(0,0,0,.12) 72%,rgba(0,0,0,.05) 100%),
-      linear-gradient(0deg,rgba(0,0,0,.55) 0%,transparent 30%,transparent 65%,rgba(0,0,0,.3) 100%);}
-    .hero-content{position:relative;z-index:2;padding-top:40px;width:47%;color:#fff}
+    .hero-media::after{content:"";position:absolute;inset:0;z-index:1;}
+    .hero-content{position:relative;z-index:2;padding-top:40px;width:47%}
     .hero-kicker{font:500 12px/1.75 Poppins,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#eee;max-width:340px}
     .hero-visual-heading{margin:18px 0 22px;font:500 clamp(58px,6.1vw,94px)/.92 Oswald,Arial,sans-serif;letter-spacing:.025em;text-transform:uppercase;font-weight: 400;}
     .hero-visual-heading span{display:block;color:var(--red)}
     .hero-rule{width:28px;height:2px;background:var(--red);margin:0 0 18px}
-    .hero-copy{max-width:365px;color:#bdbdbd;font:400 13px/1.85 Poppins,Arial,sans-serif;margin:0 0 25px}
+    .hero-copy{max-width:365px;color:#fff;font:400 13px/1.85 Poppins,Arial,sans-serif;margin:0 0 25px}
     .hero-actions{display:flex;flex-wrap:wrap;gap:14px}
     .trust-row{position:absolute;z-index:3;right:max(32px,calc((100vw - var(--max))/2));bottom:34px;display:flex;gap:36px;align-items:center}
     .trust{display:flex;align-items:center;gap:10px;padding-right:24px;border-right:1px solid #343434;min-height:34px}
@@ -112,8 +131,8 @@
     .eyebrow .logo3m-mark{color:inherit;font:inherit;font-weight:800}
     .section-title .logo3m-mark,.standard-block h3 .logo3m-mark{color:var(--red);font:inherit;font-weight:800}
     .nav-links .logo3m-mark{color:var(--red);font:800 1em/1 Poppins,Arial,sans-serif}
-    .trust strong{display:block;color:#ffffff;font:500 16px/1.15 Oswald,Arial,sans-serif;letter-spacing:.03em}
-    .trust small{display:block;color:#a4a4a4;font:400 13px/1.35 Poppins,Arial,sans-serif;margin-top:3px;white-space:nowrap;}
+    .trust strong{display:block;font:500 16px/1.15 Oswald,Arial,sans-serif;letter-spacing:.03em}
+    .trust small{display:block;color:#a4a4a4;font:400 13px/1.35 Poppins,Arial,sans-serif;margin-top:3px;white-space:nowrap}
         .hero-google-badge {
         display: flex;
         align-items: center;
@@ -127,7 +146,7 @@
         position: absolute;
         z-index: 4;
         right: max(32px,calc((100vw - var(--max))/2));
-        bottom: 126px;
+        bottom: 118px;
     }
         .hero-google-badge i {
         color: #4285F4;
@@ -148,12 +167,12 @@
     }
 
     /* Why */
-    .why{padding:30px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;background:#fafafa}
+    .why{padding:30px 0;border-top:1px solid #292929;border-bottom:1px solid #292929;background:#0a0a0a}
 
     /* Final CTA */
     .final-cta{padding:32px 0 44px}
     .cta-box{
-      position:relative;overflow:hidden;border:1px solid #e2e2e2;background:#f7f7f7;color:#fff;
+      position:relative;overflow:hidden;border:1px solid #2c2c2c;background:#0c0c0c;
       min-height:78px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px
     }
     .cta-box::before{
@@ -165,7 +184,7 @@
       background:linear-gradient(100deg,rgba(5,5,5,.95) 20%,rgba(5,5,5,.72) 55%,rgba(237,28,36,.18) 100%)
     }
     .cta-box>*{position:relative;z-index:2}
-    .cta-box h2{margin:0;font:500 40px/1.05 Oswald;letter-spacing:.05em;text-transform:uppercase;font-weight:400;color:#fff}
+    .cta-box h2{margin:0;font:500 40px/1.05 Oswald;letter-spacing:.05em;text-transform:uppercase;font-weight:400}
     .cta-box p{margin:14px 0 0;color:#c2c2c2;font-size:14px;max-width:360px}
     .cta-trust{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
     .cta-trust span{display:flex;align-items:center;gap:8px;color:#ddd;font:500 11px/1 Poppins,Arial,sans-serif;letter-spacing:.05em;text-transform:uppercase}
@@ -181,22 +200,22 @@
     }
 
     /* Footer */
-    footer{border-top:1px solid #eee;background:#ffffff}
+    footer{border-top:1px solid #292929;background:#050505}
     .footer-main{padding:28px 0 25px;display:grid;grid-template-columns:1.4fr .8fr .95fr 1.05fr .8fr;gap:28px}
     .footer-brand img{width:73px;margin-bottom:14px}
-    .footer-brand p{max-width:260px;color:#666;font-size:13px;line-height:1.65;margin:0}
-    .footer-col{padding-left:28px;border-left:1px solid #e2e2e2}
+    .footer-brand p{max-width:260px;color:#999;font-size:13px;line-height:1.65;margin:0}
+    .footer-col{padding-left:28px;border-left:1px solid #292929}
     .footer-col h3{margin:0 0 15px;font:500 11px/1 Oswald;letter-spacing:.08em;text-transform:uppercase}
-    .footer-col a,.footer-col span{display:block;color:#666;font-size:13px;line-height:2}
-    .footer-accordion{display:block;width:100%;padding:0;margin:0 0 15px;border:0;background:none;color:#141414;text-align:left;font:500 11px/1 Oswald,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:default}
+    .footer-col a,.footer-col span{display:block;color:#9c9c9c;font-size:13px;line-height:2}
+    .footer-accordion{display:block;width:100%;padding:0;margin:0 0 15px;border:0;background:none;color:#fff;text-align:left;font:500 11px/1 Oswald,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:default}
     .footer-accordion i{display:none}
     .footer-panel{display:block}
-    .footer-col a:hover{color:var(--red)}.footer-col a i{width:15px;margin-right:5px;text-align:center}
+    .footer-col a:hover{color:#fff}.footer-col a i{width:15px;margin-right:5px;text-align:center}
     .socials{display:flex;gap:10px;margin-top:5px}
-    .social{width:38px;height:38px;border:1px solid #cfcfcf;border-radius:50%;display:grid;place-items:center;font:600 10px/1 Oswald}
+    .social{width:38px;height:38px;border:1px solid #4a4a4a;border-radius:50%;display:grid;place-items:center;font:600 10px/1 Oswald}
     .social:hover{border-color:var(--red);color:var(--red)}
     .social i{font-size:20px;margin-left:8px;margin-top:8px}
-    .footer-bottom{border-top:1px solid #eee;padding:10px 0;display:flex;align-items:center;justify-content:space-between;color:#666;font-size:12px}
+    .footer-bottom{border-top:1px solid #222;padding:10px 0;display:flex;align-items:center;justify-content:space-between;color:#777;font-size:12px}
     .footer-bottom-links{display:flex;gap:34px}
 
     @media (max-width:1100px){
@@ -211,15 +230,15 @@
       .container{width:min(calc(100% - 32px),var(--max))}
       .nav{height:70px}
       .nav{height:70px;display:flex;gap:0}
-      .nav-links{position:absolute;left:16px;right:16px;top:70px;padding:14px 18px;background:#ffffff;border:1px solid #e2e2e2;flex-direction:column;align-items:stretch;gap:0;max-height:0;opacity:0;overflow:hidden;padding-top:0;padding-bottom:0;pointer-events:none;transform:translateY(-8px);transition:max-height .35s ease,opacity .25s ease,transform .3s ease,padding .35s ease;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+      .nav-links{position:absolute;left:16px;right:16px;top:70px;padding:14px 18px;background:#080808;border:1px solid #2a2a2a;flex-direction:column;align-items:stretch;gap:0;max-height:0;opacity:0;overflow:hidden;padding-top:0;padding-bottom:0;pointer-events:none;transform:translateY(-8px);transition:max-height .35s ease,opacity .25s ease,transform .3s ease,padding .35s ease}
       .nav-links.open{display:flex;max-height:420px;opacity:1;padding-top:14px;padding-bottom:14px;pointer-events:auto;transform:translateY(0)}
-      .nav-links a{padding:14px 0;border-bottom:1px solid #eee}
+      .nav-links a{padding:14px 0;border-bottom:1px solid #1f1f1f}
       .nav-links a:last-child{border-bottom:0}
       .nav-links a::after{bottom:7px}
       .header-cta{display:none}
       .menu-toggle{display:flex;margin-left:auto}
       .hero{min-height:760px;align-items:flex-end}
-      .hero-media img{object-position:65% center}
+      .hero-media img{object-position:center 78%}
       .hero-content{width:100%;padding:0 0 128px}
       .trust-row{right:16px;left:16px;bottom:28px;justify-content:space-between;gap:12px}
       .trust{padding-right:12px}
@@ -235,8 +254,8 @@
       .container{width:calc(100% - 24px)}
       .brand img{width:68px}
       .hero{min-height:720px}
-      .hero-media img{object-position:68% center;filter:brightness(.72) contrast(1.05)}
-      .hero-media::after{background:linear-gradient(180deg,rgba(0,0,0,.22) 0%,rgba(0,0,0,.55) 40%,rgba(0,0,0,.9) 75%,rgba(0,0,0,.97) 100%)}
+      .hero-media img{object-position:center 80%}
+
       .hero-content{padding-bottom:150px}
       .hero-kicker{font-size:11px;max-width:250px}
       .hero-visual-heading{font-size:54px;margin:14px 0 18px}
@@ -255,7 +274,7 @@
       .cta-box h2{font-size:26px}
       .cta-box .btn{width:100%}
       .footer-main{grid-template-columns:1fr;gap:0}
-      .footer-col{border-left:0;border-top:1px solid #eee;padding:0;margin-top:0}
+      .footer-col{border-left:0;border-top:1px solid #292929;padding:0;margin-top:0}
       .footer-brand{padding-bottom:18px}
       .footer-col .footer-accordion{display:flex;align-items:center;justify-content:space-between;min-height:54px;padding:0;margin:0;cursor:pointer;letter-spacing:.1em}
       .footer-col .footer-accordion i{display:block;color:var(--red);font-size:10px;transition:transform .25s ease}
@@ -287,7 +306,7 @@
       background:#ed1c24;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.45);
       transition:.25s ease
     }
-    .wa-float i{font-size:28px;color:#fff}
+    .wa-float i{font-size:28px;color:#04140b}
     .wa-float:hover{transform:translateY(-3px) scale(1.04)}
     .wa-float::before{
       content:"";position:absolute;inset:0;border-radius:50%;background:#ed1c24;opacity:.55;
@@ -296,8 +315,8 @@
     @keyframes wa-pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.9);opacity:0}}
     .wa-float-label{
       position:absolute;right:74px;top:50%;transform:translateY(-50%);white-space:nowrap;
-      background:#ffffff;border:1px solid #e2e2e2;color:#141414;font:500 12px/1 Poppins,Arial,sans-serif;
-      letter-spacing:.04em;padding:10px 14px;border-radius:6px;opacity:0;pointer-events:none;transition:.2s ease;box-shadow:0 6px 18px rgba(0,0,0,.12)
+      background:#0e0e0e;border:1px solid #2c2c2c;color:#fff;font:500 12px/1 Poppins,Arial,sans-serif;
+      letter-spacing:.04em;padding:10px 14px;border-radius:6px;opacity:0;pointer-events:none;transition:.2s ease
     }
     .wa-float:hover .wa-float-label{opacity:1}
     @media (prefers-reduced-motion:reduce){.wa-float::before{animation:none}}
@@ -310,13 +329,13 @@
     /* Sticky mobile CTA bar */
     .sticky-cta-bar{
       display:none;position:fixed;left:0;right:0;bottom:0;z-index:59;gap:1px;
-      background:#e2e2e2;border-top:1px solid #e2e2e2;box-shadow:0 -4px 14px rgba(0,0,0,.08)
+      background:#2c2c2c;border-top:1px solid #2c2c2c
     }
     .sticky-cta-bar a{
       flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;
-      background:#ffffff;color:#141414;font:500 12px/1 Poppins,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase
+      background:#0b0b0b;color:#fff;font:500 12px/1 Poppins,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase
     }
-    .sticky-cta-bar a.wa{background:#ed1c24;color:#fff}
+    .sticky-cta-bar a.wa{background:#ed1c24;color:#04140b}
     .sticky-cta-bar a i{font-size:15px}
     @media (max-width:820px){
       .sticky-cta-bar{display:flex}
@@ -325,9 +344,9 @@
     }
 
     /* Reels / testimonials */
-    .reels{padding:44px 0 26px;border-top:1px solid #eee;background:#fafafa}
+    .reels{padding:44px 0 26px;border-top:1px solid #292929;background:#0a0a0a}
     .reels-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:34px}
-    .reel-card{position:relative;aspect-ratio:9/16;overflow:hidden;border:1px solid #e3e3e3;background:#f2f2f2;cursor:pointer;display:block}
+    .reel-card{position:relative;aspect-ratio:9/16;overflow:hidden;border:1px solid #2d2d2d;background:#111;cursor:pointer;display:block}
     .reel-card video{width:100%;height:100%;object-fit:cover;filter:brightness(.74);transition:transform .5s ease,filter .3s ease}
     .reel-card:hover video,.reel-card.playing video{transform:scale(1.045);filter:brightness(.92)}
     .reel-play{
@@ -350,15 +369,15 @@
     .reel-card:hover .reel-sound,.reel-card.playing .reel-sound{opacity:1}
     .reel-caption{position:absolute;left:0;right:0;bottom:0;padding:14px 12px;background:linear-gradient(0deg,rgba(0,0,0,.92),transparent);z-index:1}
     .reel-caption strong{display:block;font:500 13px/1.25 Poppins,Arial,sans-serif;color:#fff}
-    .reel-caption span{display:block;color:#d8d8d8;font-size:11px;margin-top:3px}
+    .reel-caption span{display:block;color:#b8b8b8;font-size:11px;margin-top:3px}
 
     .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .testimonial-card{border:1px solid #e3e3e3;background:#f2f2f2;padding:22px 20px}
+    .testimonial-card{border:1px solid #2d2d2d;background:#111;padding:22px 20px}
     .testimonial-stars{color:var(--red);font-size:12px;letter-spacing:2px;margin-bottom:12px}
-    .testimonial-card p{margin:0 0 16px;color:#333333;font-size:13.5px;line-height:1.75}
+    .testimonial-card p{margin:0 0 16px;color:#d4d4d4;font-size:13.5px;line-height:1.75}
     .testimonial-name{display:flex;align-items:center;justify-content:space-between;gap:10px}
     .testimonial-name strong{font:500 13px/1.2 Poppins,Arial,sans-serif;text-transform:uppercase;letter-spacing:.03em}
-    .testimonial-name span{color:#666666;font-size:11px}
+    .testimonial-name span{color:#8f8f8f;font-size:11px}
 
     @media (max-width:1100px){
       .reels-grid{grid-template-columns:repeat(5,1fr);gap:8px}
@@ -375,26 +394,24 @@
     }
 
     /* Testimonials (separate section) */
-    .testimonials{padding:44px 0 40px;border-top:1px solid #eee}
+    .testimonials{padding:44px 0 40px;border-top:1px solid #292929}
 
     .google-summary{
       display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-bottom:28px;
-      padding:20px 24px;border:1px solid #e3e3e3;background:#f2f2f2
+      padding:20px 24px;border:1px solid #292929;background:#0a0a0a
     }
     .google-summary-badge{display:flex;align-items:center;gap:12px}
     .google-summary-badge i{font-size:26px;color:#4285F4}
-    .google-summary-score{font:500 32px/1 Oswald,Arial,sans-serif;color:#141414}
+    .google-summary-score{font:500 32px/1 Oswald,Arial,sans-serif;color:#fff}
     .google-summary-stars{color:var(--red);font-size:14px;letter-spacing:2px;margin:2px 0}
-    .google-summary-meta{color:#666666;font-size:12.5px}
+    .google-summary-meta{color:#9a9a9a;font-size:12.5px}
     .google-summary-cta{margin-left:auto}
     @media (max-width:620px){
       .google-summary{flex-direction:column;align-items:flex-start;gap:14px}
       .google-summary-cta{margin-left:0;width:100%}
     }
-    .testimonial-source{display:flex;align-items:center;gap:6px;margin-top:10px;color:#666666;font-size:11px}
+    .testimonial-source{display:flex;align-items:center;gap:6px;margin-top:10px;color:#7a7a7a;font-size:11px}
     .testimonial-source i{color:#4285F4;font-size:13px}
-
-    /* WhatsApp Safa section removed (no matching markup) */
 
     /* Hero CTA pair — strong, attention-grabbing animation treatment.
        "Get quote" pulses + glows + shimmers + bounces on load; "Call"
@@ -483,9 +500,6 @@
     .trust-row-big .trust-3m{font-size:13px}
     .trust-row-big .trust strong{font-size:18px;letter-spacing:.035em}
     .trust-row-big .trust small{font-size:11px;max-width:200px;white-space:normal}
-    /* On mobile the trust panel keeps its bordered "box" look (matching the
-       reference design) instead of collapsing into bare unstyled text — see
-       the full mobile rebuild further down for sizing/position. */
 
     /* Why choose SAFA — bigger block-card layout */
     .why-v2{padding:50px 0}
@@ -493,14 +507,14 @@
     .why-heading .section-title{font-size:clamp(30px,3vw,44px)}
     .why-grid-v2{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .why-block{
-      display:flex;flex-direction:column;gap:14px;padding:26px 22px;border:1px solid #e3e3e3;
-      background:#f2f2f2;transition:.25s ease
+      display:flex;flex-direction:column;gap:14px;padding:26px 22px;border:1px solid #292929;
+      background:#0c0c0c;transition:.25s ease
     }
     .why-block:hover{border-color:var(--red);transform:translateY(-3px)}
     .why-block .why-icon{width:44px;height:44px;flex:0 0 44px;color:var(--red)}
     .why-block .why-icon i{font-size:26px}
     .why-block strong{display:block;font:500 16px/1.25 Poppins,Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em}
-    .why-block small{display:block;color:#666666;font-size:12.5px;margin-top:6px;line-height:1.5}
+    .why-block small{display:block;color:#999;font-size:12.5px;margin-top:6px;line-height:1.5}
     @media (max-width:1100px){.why-grid-v2{grid-template-columns:repeat(3,1fr)}}
     @media (max-width:820px){.why-grid-v2{grid-template-columns:repeat(3,1fr)}}
     @media (max-width:520px){
@@ -516,10 +530,10 @@
     /* THE 3M STANDARD section */
     .standard{padding:14px 0 44px}
     .standard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .standard-block{border:1px solid #e3e3e3;background:#f2f2f2;padding:30px 26px;text-align:left}
+    .standard-block{border:1px solid #2d2d2d;background:#0a0a0a;padding:30px 26px;text-align:left}
     .standard-emoji{font-size:34px;margin-bottom:16px;line-height:1}
     .standard-block h3{margin:0 0 10px;font:500 17px/1.2 Oswald,Arial,sans-serif;letter-spacing:.03em;text-transform:uppercase}
-    .standard-block p{margin:0;color:#666666;font-size:13px;line-height:1.7}
+    .standard-block p{margin:0;color:#9c9c9c;font-size:13px;line-height:1.7}
     @media (max-width:820px){.standard-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:520px){
       .standard-grid{gap:10px}
@@ -539,8 +553,8 @@
     .testimonial-track .testimonial-card{flex:0 0 calc((100% - 28px)/3);scroll-snap-align:start;box-sizing:border-box;min-width:0;height:auto;display:flex;flex-direction:column}
     .testimonial-track .testimonial-card p{flex:1}
     .testimonial-dots{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:20px}
-    .testimonial-dots button{width:8px;height:8px;border-radius:50%;border:0;background:#d6d6d6;padding:0;cursor:pointer;transition:all .25s ease}
-    .testimonial-dots button:hover{background:#aaaaaa}
+    .testimonial-dots button{width:8px;height:8px;border-radius:50%;border:0;background:#3a3a3a;padding:0;cursor:pointer;transition:all .25s ease}
+    .testimonial-dots button:hover{background:#777}
     .testimonial-dots button.active{background:var(--red);width:22px;border-radius:4px}
     @media (max-width:820px){
       .testimonial-track{gap:12px}
@@ -597,24 +611,32 @@
     ================================================================ */
     @media (max-width:820px){
       .hero{
-        display:block;
-        min-height:0;
-        padding:100px 0 32px;
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        min-height:100vh;
+        min-height:100svh;
+        min-height:88dvh !important;
+        padding:120px 0 32px;
       }
-      .hero-content{width:100%;padding:0 46% 0 0}
-      .hero-kicker{font-size:11px;max-width:260px}
-      /* Heading shrunk ~30% (was clamp(46px,13vw,66px)) so it never competes with the trust box on the right */
-      .hero-visual-heading{font-size:clamp(30px,8.5vw,42px);margin:12px 0 14px}
-      .hero-copy{font-size:11.5px;line-height:1.7;max-width:260px;margin:0 0 20px}
+      .hero .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        flex:1;
+      }
+      .hero-content{
+        width:100%;padding:0 46% 0 0;
+        display:flex;flex-direction:column;flex:1;
+      }
+      .hero-kicker{font-size:13px;max-width:260px;letter-spacing:.18em;padding-top: 64px;}
+      .hero-visual-heading{font-size:clamp(38px,10.5vw,52px);margin:20px 0 24px}
+      .hero-rule{margin-bottom:26px}
+      .hero-copy{font-size:13.5px;line-height:1.85;font-weight: 500;max-width:280px;margin:0 0 34px}
 
-      .hero-actions{gap:10px; margin-bottom: 20px;}
-      .hero-actions .btn{width:100%;min-height:42px;padding:0 16px;font:500 10.5px/1 Poppins,Arial,sans-serif;gap:10px}
+      .hero-actions{gap:18px;margin-bottom:8px}
+      .hero-actions .btn{width:100%;min-height:56px;padding:0 20px;font:500 12.5px/1 Poppins,Arial,sans-serif;gap:12px}
 
-      /* Trust box — mobile: kept at full "box" treatment (border, fill,
-         shadow) and scaled up to read as clearly as it does on desktop,
-         instead of shrinking into an unboxed sliver. Pinned to the top-right
-         of the hero, stacked vertically, sized relative to the viewport so
-         it always fills a consistent, legible share of the box. */
       .hero{position:relative}
       .trust-row{
         position:absolute;
@@ -658,39 +680,40 @@
     }
      @media (max-width:480px){
       .hero-content{padding-right:44%}
-      .trust-row{width:min(46vw,148px);right:12px;top:208px;gap:12px !important}
+      .trust-row{width:min(46vw,148px);height: 240px;right:12px;top:220px !important;gap:26px !important}
       .trust-row-big{padding:13px 11px}
       .trust-row-big .trust-icon{width:30px;height:30px;flex:0 0 30px}
-      .trust-row-big .trust strong{font-size:11px}
-      .trust-row-big .trust small{font-size:8.5px}
+      .trust-row-big .trust strong{font-size:13px}
+      .trust-row-big .trust small{font-size:10px}
       .hero-google-badge{top:84px;right:6px}
+      .hero-actions .btn {
+        width: 100%;
+        font-size: 10px !important;
+        min-height:50px;
+      }
     }
      @media (max-width:369px){
       .hero-content{padding-right:42%}
-      .trust-row{width:min(48vw,122px);top:187px;gap:10px !important}
+      .trust-row{width:min(48vw,122px);top:218px !important;gap:12px !important}
       .trust-row-big{padding:11px 9px}
       .trust-row-big .trust-icon{width:26px;height:26px;flex:0 0 26px;font-size:10px}
       .trust-row-big .trust small {
-        font-size: 8px !important;
-      }
-      .btn-whatsapp::after {
-        font-size: 12px;
-      }
-      .trust-row-big .trust strong {
         font-size: 10px !important;
       }
+      .trust-row-big .trust strong {
+        font-size: 12px !important;
+      }
       .hero-actions .btn {
-        width: 89%; font-size: 8px !important;}
+        width: 100%;
+        font-size: 8.5px !important;
+        min-height:50px;
+      }
   }
 
     /* ================================================================
        MOBILE ANIMATIONS
-       Scroll-reveal for cards, hero entrance, tap feedback and a
-       sticky-bar slide-in — all scoped to phone/tablet widths so
-       desktop is untouched. Respects prefers-reduced-motion.
     ================================================================ */
     @media (max-width:820px){
-      /* Hero: staged fade-up on load */
       .hero-kicker,.hero-visual-heading,.hero-rule,.hero-copy,.hero-actions,.trust-row-big{
         opacity:0;transform:translateY(16px);
         animation:heroIn .6s ease forwards;
@@ -703,7 +726,6 @@
       .trust-row-big{animation-delay:.5s}
       @keyframes heroIn{to{opacity:1;transform:translateY(0)}}
 
-      /* Scroll-reveal: fade + rise as sections enter the viewport (see JS) */
       .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
       .reveal.in-view{opacity:1;transform:translateY(0)}
       .why-grid-v2 .why-block:nth-child(2).reveal{transition-delay:.06s}
@@ -721,15 +743,12 @@
       .reels-grid .reel-card:nth-child(5).reveal{transition-delay:.2s}
       .reels-grid .reel-card:nth-child(6).reveal{transition-delay:.25s}
 
-      /* Tap feedback for touch — hover states don't fire on mobile,
-         so give buttons and cards a quick press-down instead */
       .btn,.why-block,.standard-block,.reel-card,.testimonial-card,.social,.wa-float{
         transition:transform .15s ease,filter .15s ease,border-color .25s ease;
       }
       .btn:active,.why-block:active,.standard-block:active{transform:scale(.96)}
       .reel-card:active{transform:scale(.97)}
 
-      /* Sticky bottom CTA bar: slide up on load instead of appearing instantly */
       .sticky-cta-bar{animation:stickyIn .5s ease .2s both}
       @keyframes stickyIn{from{transform:translateY(100%)}to{transform:translateY(0)}}
     }
@@ -768,7 +787,7 @@
         "email":"reception@safa.ae",
         "telephone":"+971561059722",
         "foundingDate":"2003",
-        "description":"3M Authorized Tint Center in Dubai offering premium car window tinting, paint protection film, nano ceramic coating, vinyl wraps and detailing since 2003.",
+        "description":"3M Authorized installer in Dubai offering premium 3M Paint Protection Film, car window tinting, nano ceramic coating, vinyl wraps and detailing since 2003.",
         "priceRange":"$$",
         "aggregateRating":{
           "@type":"AggregateRating",
@@ -799,17 +818,17 @@
       },
       {
         "@type":"Service",
-        "name":"Car Window Tinting",
-        "provider":{"@id":"https://www.safa.ae/#localbusiness"},
-        "areaServed":"Dubai, UAE",
-        "url":"https://www.safa.ae/car-window-tinting-dubai/"
-      },
-      {
-        "@type":"Service",
         "name":"Paint Protection Film (PPF)",
         "provider":{"@id":"https://www.safa.ae/#localbusiness"},
         "areaServed":"Dubai, UAE",
         "url":"https://www.safa.ae/ppf/"
+      },
+      {
+        "@type":"Service",
+        "name":"Car Window Tinting",
+        "provider":{"@id":"https://www.safa.ae/#localbusiness"},
+        "areaServed":"Dubai, UAE",
+        "url":"https://www.safa.ae/car-window-tinting-dubai/"
       },
       {
         "@type":"Service",
@@ -835,22 +854,20 @@
       {
         "@type":"BreadcrumbList",
         "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.safa.ae/"}
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.safa.ae/"},
+          {"@type":"ListItem","position":2,"name":"Paint Protection Film (PPF)","item":"https://www.safa.ae/ppf/"}
         ]
       },
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"What is the best car window tint for Dubai?","acceptedAnswer":{"@type":"Answer","text":"The right film depends on your vehicle and priorities — 3M's FX Series and CS Series both offer sun control in a range of shades, while 3M Crystalline is a premium option focused on heat control and clarity. Our team can recommend the right fit on WhatsApp."}},
-          {"@type":"Question","name":"How does car window tinting help in Dubai?","acceptedAnswer":{"@type":"Answer","text":"Window tinting helps reduce heat build-up and glare inside the vehicle, adds a level of UV protection for occupants and the interior, and improves privacy — all useful in Dubai's climate and traffic."}},
-          {"@type":"Question","name":"Does 3M window film provide UV protection?","acceptedAnswer":{"@type":"Answer","text":"Yes. 3M window films are designed to help block harmful UV rays, protecting occupants as well as the vehicle's interior surfaces from prolonged sun exposure."}},
-          {"@type":"Question","name":"Does window tint reduce glare?","acceptedAnswer":{"@type":"Answer","text":"Yes, window film reduces glare from the sun and headlights, making for a more comfortable and safer driving experience."}},
-          {"@type":"Question","name":"What is the difference between 3M FX and CS window film?","acceptedAnswer":{"@type":"Answer","text":"3M FX Series is an economical, color-stable dyed film available in a range of shades. 3M CS Series uses 3M's Color Stable technology and is built to resist fading over a longer period."}},
-          {"@type":"Question","name":"How long does car window tinting take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on your vehicle and the film selected. Message SAFA on WhatsApp with your car details for an accurate estimate."}},
-          {"@type":"Question","name":"How long does window tint last?","acceptedAnswer":{"@type":"Answer","text":"3M window films are engineered for long-lasting performance and are backed by manufacturer-supported warranties against issues such as fading, bubbling and peeling. Exact coverage varies by product."}},
-          {"@type":"Question","name":"How much does car window tinting cost in Dubai?","acceptedAnswer":{"@type":"Answer","text":"Pricing depends on your vehicle type and the film selected. WhatsApp SAFA your vehicle details and requirements for an accurate quote."}},
-          {"@type":"Question","name":"Is car window tinting legal in Dubai?","acceptedAnswer":{"@type":"Answer","text":"Yes. UAE traffic law permits car window tinting up to 50% on side and rear windows, and SAFA Automotive's installations are carried out in line with current regulations."}},
-          {"@type":"Question","name":"Why choose a 3M Authorized Tint Center?","acceptedAnswer":{"@type":"Answer","text":"As a 3M Authorized Tint Center, SAFA Automotive installs genuine 3M products backed by 3M, applied by an experienced, trained team."}},
+          {"@type":"Question","name":"What is 3M Paint Protection Film (PPF)?","acceptedAnswer":{"@type":"Answer","text":"3M PPF is a clear, sacrificial film applied to your vehicle's paint. It absorbs road debris, resists chips and scratches, and can self-heal minor swirl marks with heat exposure, keeping the paint underneath protected."}},
+          {"@type":"Question","name":"Does PPF come with a warranty?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every 3M PPF install at SAFA Automotive comes with a genuine 10-year manufacturer-backed warranty."}},
+          {"@type":"Question","name":"Does PPF really self-heal scratches?","acceptedAnswer":{"@type":"Answer","text":"Minor scratches and swirl marks in the film can disappear on their own with heat exposure, such as sunlight or warm water, thanks to the film's self-healing top coat."}},
+          {"@type":"Question","name":"What does PPF protect against in Dubai?","acceptedAnswer":{"@type":"Answer","text":"PPF acts as a sacrificial barrier against road debris, chips and scratches, and also resists UV fading, bird droppings, tar and bug stains from Dubai's roads and sun."}},
+          {"@type":"Question","name":"How long does a PPF install take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on your vehicle and the coverage selected — full front, full body or partial. Message SAFA on WhatsApp with your car details for an accurate estimate."}},
+          {"@type":"Question","name":"How much does PPF cost in Dubai?","acceptedAnswer":{"@type":"Answer","text":"Pricing depends on your vehicle type and the coverage selected. WhatsApp SAFA your vehicle details and requirements for an accurate quote."}},
+          {"@type":"Question","name":"Why choose a 3M Authorized installer for PPF?","acceptedAnswer":{"@type":"Answer","text":"As a 3M Authorized installer, SAFA Automotive installs genuine 3M film backed by 3M, applied by an experienced, trained team."}},
           {"@type":"Question","name":"How can I contact SAFA Automotive?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp is the fastest way to reach SAFA Automotive. You can also call +971 4 338 0899, the toll-free line 800-8468, or email reception@safa.ae."}}
         ]
       }
@@ -860,6 +877,12 @@
 </head>
 
 <body>
+<div class="announcement-bar" role="banner">
+  <a href="tel:8008468" aria-label="Call our toll free number, 800-TINT, 800-8468">
+    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+    TOLL FREE NUMBER <strong>800&#8209;TINT&nbsp;(8468)</strong>
+  </a>
+</div>
 <header class="site-header" id="site-header">
   <div class="container nav">
     <a class="brand" href="/" aria-label="SAFA Automotive home">
@@ -875,7 +898,7 @@
       <a href="#appointment">CONTACT</a>
     </nav>
 
-    <a class="btn header-cta wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive, I am interested in your automotive protection services. I would like to get more information about my vehicle." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment.https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WHATSAPP US</a>
+    <a class="btn header-cta wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive, I am interested in your Paint Protection Film (PPF) service. I would like to get more information about my vehicle." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WHATSAPP US</a>
     <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">
       <!-- <i class="fa-solid fa-bars" aria-hidden="true"></i> -->
     </button>
@@ -885,23 +908,26 @@
 <main>
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <div class="hero-media" aria-hidden="true">
-    <img src="assets/hero.png"
-         alt=""
-         width="1024" height="435"
-         fetchpriority="high" decoding="async">
+    <picture>
+      <source media="(max-width:820px)" srcset="assets/mobile-hero-2.png">
+      <img src="assets/hero2.png"
+           alt=""
+           width="1024" height="435"
+           fetchpriority="high" decoding="async">
+    </picture>
   </div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-kicker"><span class="logo3m-mark">3M</span> CAR WINDOW TINTING SOLUTION</div>
-      <h1 id="hero-title" class="sr-only">Premium Car Window Tinting &amp; Protection in Dubai</h1>
-      <div class="hero-visual-heading" aria-hidden="true">BEAT THE,<br><span>HEAT.</span></div>
+      <div class="hero-kicker"><span class="logo3m-mark">3M</span> PAINT PROTECTION FILM</div>
+      <h1 id="hero-title" class="sr-only">Premium 3M Paint Protection Film for Dubai's Roads</h1>
+      <div class="hero-visual-heading" aria-hidden="true"><span>SCRATCHES</span> STOP HERE.</div>
       <div class="hero-rule"></div>
-      <p class="hero-copy">Free heat-test demo at our<br class="desktop-break"> Al Quoz workshop.</p>
+      <p class="hero-copy">Free consultation &amp; film demo at our<br class="desktop-break"> Al Quoz workshop.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary wa-green btn-whatsapp btn-pulse" data-wa-msg="Hi SAFA Automotive, I'd like to get a quote for my vehicle." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">GET QUOTE UNDER 60 SECONDS!</a>
+        <a class="btn btn-primary wa-green btn-whatsapp btn-pulse" data-wa-msg="Hi SAFA Automotive, I'd like to get a quote for 3M Paint Protection Film (PPF) for my vehicle." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">GET QUOTE UNDER 60 SECONDS!</a>
         <a class="btn hero-call-btn" href="tel:+971561059722"><i class="fa-solid fa-phone" aria-hidden="true" style="margin-right:8px"></i>CALL US</a>
       </div>
-      
+
     </div>
     <div class="hero-google-badge" role="img" aria-label="Google rating 4.6 out of 5, based on 200+ reviews">
       <i class="fa-brands fa-google" aria-hidden="true"></i>
@@ -920,7 +946,7 @@
       </div>
       <div class="trust">
         <div class="trust-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
-        <div><strong>500,000+ </strong><small>Holding a Legacy in Dubai's Supercar Industry</small></div>
+        <div><strong>500,000+ </strong><small>Cars Served and Counting</small></div>
       </div>
     </div>
   </div>
@@ -930,17 +956,17 @@
     <div class="why-heading">
       <div class="eyebrow">WHY CHOOSE SAFA</div>
       <h2 class="section-title" id="why-title">EXPERTISE YOU CAN TRUST</h2>
-      
+
     </div>
     <div class="why-grid-v2">
-      
+
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div><div><strong>PREMIUM MATERIALS</strong><small>Professional-grade products</small></div></div>
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-user-check"></i></div><div><strong>CERTIFIED PROFESSIONALS</strong><small>Experienced installation team</small></div></div>
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></div><div><strong>QUALITY ASSURED</strong><small>Professional workmanship</small></div></div>
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></div><div><strong>LONG-LASTING PROTECTION</strong><small>Built for everyday driving</small></div></div>
-      
+
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-car"></i></div><div><strong>500,000+ CARS SERVED</strong><small>Holding a Legacy in Dubai's Supercar Industry</small></div></div>
-      
+
       <div class="why-block"><div class="why-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div><div><strong>PREMIUM PROTECTION</strong><small>Built to protect what you drive</small></div></div>
     </div>
   </div>
@@ -951,31 +977,31 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <div class="eyebrow"><span class="logo3m-mark">3M</span> PRODUCTS</div>
+        <div class="eyebrow"><span class="logo3m-mark">3M</span> PAINT PROTECTION FILM (PPF)</div>
         <h2 class="section-title" id="standard-title">THE <span class="logo3m-mark">3M</span> STANDARD</h2>
-        <p style="margin:14px 0 0;color:#666666;font-size:13.5px;max-width:460px">Every 3M film we install comes with real, manufacturer-backed warranty.</p>
+        <p style="margin:14px 0 0;color:#9c9c9c;font-size:13.5px;max-width:460px">Every PPF install comes with real, manufacturer-backed protection.</p>
       </div>
     </div>
     <div class="standard-grid">
       <div class="standard-block">
         <div class="standard-emoji" aria-hidden="true">🛡️</div>
         <h3>10-YEAR <span class="logo3m-mark">3M</span> WARRANTY</h3>
-        <p>Genuine manufacturer warranty against fading &amp; peeling.</p>
+        <p>Genuine manufacturer warranty on every install.</p>
       </div>
       <div class="standard-block">
-        <div class="standard-emoji" aria-hidden="true">☀️</div>
-        <h3>HEAT REJECTION</h3>
-        <p>Keeps your cabin cooler, even in peak summer.</p>
+        <div class="standard-emoji" aria-hidden="true">✨</div>
+        <h3>SELF-HEALING FILM</h3>
+        <p>Minor scratches and swirl marks disappear with heat exposure.</p>
       </div>
       <div class="standard-block">
-        <div class="standard-emoji" aria-hidden="true">🔄</div>
-        <h3>99% UV PROTECTION</h3>
-        <p>Shields your skin, seats &amp; dashboard from sun damage.</p>
+        <div class="standard-emoji" aria-hidden="true">🪨</div>
+        <h3>CHIP &amp; SCRATCH RESISTANT</h3>
+        <p>A sacrificial barrier that absorbs road debris before it reaches your paint.</p>
       </div>
       <div class="standard-block">
-        <div class="standard-emoji" aria-hidden="true">🌙</div>
-        <h3>NIGHT VISIBILITY</h3>
-        <p>Engineered for clear vision after dark.</p>
+        <div class="standard-emoji" aria-hidden="true">🔆</div>
+        <h3>UV &amp; STAIN RESISTANT</h3>
+        <p>Blocks fading from Dubai's sun and resists bird droppings, tar &amp; bug stains.</p>
       </div>
     </div>
     </div>
@@ -989,7 +1015,7 @@
       <div>
         <div class="eyebrow">GOOGLE REVIEWS</div>
         <h2 class="section-title" id="reviews-title">TRUSTED BY DUBAI MOTORHEADS</h2>
-        <p class="one-line-copy" style="margin:14px 0 0;color:#666666;font-size:13.5px">Feedback from customers who protected their cars with SAFA.</p>
+        <p class="one-line-copy" style="margin:14px 0 0;color:#9c9c9c;font-size:13.5px">Feedback from customers who protected their cars with SAFA.</p>
       </div>
     </div>
 
@@ -997,7 +1023,7 @@
       <div class="google-summary-badge">
         <i class="fa-brands fa-google" aria-hidden="true"></i>
         <div>
-          <div class="google-summary-score">4.6<span style="font-size:16px;color:#666666">/5</span></div>
+          <div class="google-summary-score">4.6<span style="font-size:16px;color:#9a9a9a">/5</span></div>
           <div class="google-summary-stars" aria-hidden="true">★★★★★</div>
           <div class="google-summary-meta">Based on 200+ Google reviews</div>
         </div>
@@ -1058,12 +1084,12 @@
       <div>
         <div class="eyebrow">CLIENT RESULTS</div>
         <h2 class="section-title" id="reels-title">REAL CARS.<br>REAL RESULTS.</h2>
-        <p style="margin:14px 0 0;color:#666666;font-size:13.5px;max-width:420px">See SAFA Automotive's work in motion.</p>
+        <p style="margin:14px 0 0;color:#9c9c9c;font-size:13.5px;max-width:420px">See SAFA Automotive's work in motion.</p>
       </div>
     </div>
 
     <div class="reels-grid">
-      
+
       <button type="button" class="reel-card" data-video="assets/reel-2.mp4" data-caption="Tint Before &amp; After" data-vehicle="Range Rover Sport" data-ig="https://www.instagram.com/p/CLmNtUeDct-/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" aria-label="View reel on Instagram: Tint Before and After">
         <video src="https://cdn.shopify.com/videos/c/o/v/763ad4729ff445368d87e95f6b337629.mp4" poster="https://cdn.shopify.com/s/files/1/0761/7652/3493/files/client_review.png?v=1788939571" muted="" loop="" playsinline="" preload="none"></video>
         <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
@@ -1078,7 +1104,7 @@
         <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
         <div class="reel-caption"><strong> 3M Color Stable Tint Plus Glass Protection</strong><span>Customer Review</span></div>
       </button>
-      
+
       <button type="button" class="reel-card" data-video="assets/reel-5.mp4" data-caption="Vinyl Wrap Finish" data-vehicle="Mercedes-AMG G63" data-ig="https://www.instagram.com/p/CVk0XJZj7fr/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" aria-label="View reel on Instagram: Vinyl Wrap Finish">
         <video src="https://cdn.shopify.com/videos/c/o/v/ccf877eedbac47a78e017c73a18bbee7.mp4" poster="https://cdn.shopify.com/s/files/1/0761/7652/3493/files/client_review.png?v=1788939571" muted="" loop="" playsinline="" preload="none"></video>
         <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
@@ -1087,7 +1113,7 @@
         <div class="reel-caption"><strong>3M crystalline tint (10% darkness) with 3M polishing.</strong><span>Customer Review</span></div>
       </button>
       <button type="button" class="reel-card" data-video="assets/reel-5.mp4" data-caption="Vinyl Wrap Finish" data-vehicle="Mercedes-AMG G63" data-ig="https://www.instagram.com/p/CVhZe1bjH_G/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==" aria-label="View reel on Instagram: Vinyl Wrap Finish">
-        <video src="https://cdn.shopify.com/videos/c/o/v/8e0ef533767d4133906c47192f7d84fe.mp4" poster="https://cdn.shopify.com/s/files/1/0761/7652/3493/files/client_review.png?v=1788939571" muted="" loop="" playsinline="" preload="none"></video>
+        <video src="https://cdn.shopify.com/videos/c/o/v/8e0ef533767d4133906c47192f7d84fe.mp4" poster="https://cdn.shopify.com/s/files/1/0761/7652/3493/files/real_work.png?v=1788939829" muted="" loop="" playsinline="" preload="none"></video>
         <div class="reel-badge" aria-hidden="true"><i class="fa-brands fa-instagram"></i>REEL</div>
         <span class="reel-sound" aria-hidden="true"><i class="fa-solid fa-volume-xmark"></i></span>
         <span class="reel-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
@@ -1109,8 +1135,8 @@
       </button>
     </div>
     <div style="text-align:center">
-      <p style="margin:0 0 16px;color:#666666;font-size:13px;text-transform:uppercase;letter-spacing:.08em">Want the same result?</p>
-      <a class="btn btn-primary wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive! I saw your reels and I'd like a quote." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WHATSAPP SAFA</a>
+      <p style="margin:0 0 16px;color:#9c9c9c;font-size:13px;text-transform:uppercase;letter-spacing:.08em">Want the same result?</p>
+      <a class="btn btn-primary wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive! I saw your reels and I'd like a quote for PPF." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WHATSAPP SAFA</a>
     </div>
   </div>
 </section>
@@ -1119,8 +1145,8 @@
   <div class="container">
     <div class="cta-box">
       <div>
-        <h2 id="appointment-title">READY TO PROTECT YOUR CAR?</h2>
-        <p>Get expert advice on the right window tinting and protection solution for your vehicle.</p>
+        <h2 id="appointment-title">READY TO PROTECT YOUR PAINT?</h2>
+        <p>Get expert advice on the right PPF coverage for your vehicle.</p>
         <div class="cta-trust cta-trust-highlight">
           <span><i class="fa-regular fa-calendar-check" aria-hidden="true"></i>EST. 2003</span>
           <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span class="logo3m-mark" style="font-size:1em">3M</span>&nbsp;Authorized</span>
@@ -1130,7 +1156,7 @@
         </div>
       </div>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn btn-primary wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive! I'd like to book an appointment." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">GET QUOTE UNDER 60 SECONDS!</a>
+        <a class="btn btn-primary wa-green btn-whatsapp" data-wa-msg="Hi SAFA Automotive! I'd like to book a PPF appointment." href="https://wa.me/+971561059722?text=Hi%20SAFA%20Automotive!%20I'd%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">GET QUOTE UNDER 60 SECONDS!</a>
         <a class="btn" href="tel:+971561059722"><i class="fa-solid fa-phone" aria-hidden="true" style="margin-right:8px"></i>CALL +971 56 105 9722</a>
       </div>
     </div>
@@ -1148,14 +1174,14 @@
 
 <div class="sticky-cta-bar" aria-label="Quick actions">
   <a href="tel:+971561059722"><i class="fa-solid fa-phone" aria-hidden="true"></i>Call</a>
-  <a class="wa" data-wa-msg="Hi SAFA Automotive! I'd like a free quote." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
+  <a class="wa" data-wa-msg="Hi SAFA Automotive! I'd like a free quote for PPF." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
 </div>
 
 <script>
   // Single source of truth for the WhatsApp number — update this one line
   // to switch every CTA on the page (header, hero, benefits, why, reels,
   // testimonials, final CTA, footer, floating button and mobile sticky bar) at once.
-  const WHATSAPP_NUMBER = '97143380899';
+  const WHATSAPP_NUMBER = '971561059722';
 
   document.querySelectorAll('[data-wa-msg]').forEach((el) => {
     const msg = el.getAttribute('data-wa-msg') || "Hi SAFA Automotive! I'd like a free quote.";
